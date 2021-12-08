@@ -1,3 +1,6 @@
+#ifndef NETWORK_HPP
+#define NETWORK_HPP
+
 #include <fstream>
 #include <vector>
 #include <map>
@@ -30,3 +33,5 @@ namespace network {
 
     PathMap shortestPath(const Graph&, const char);
 }
+
+#endif
