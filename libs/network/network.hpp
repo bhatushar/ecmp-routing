@@ -9,7 +9,24 @@ namespace network {
         ConnectedRouter(char, uint32_t);
     };
 
+    struct Node {
+        char id;
+        uint32_t costFromSource = 0;
+        std::vector<Node*> parents;
+        bool isConnected = false;
+        Node(char);
+    };
+
+    struct RouterPaths {
+        uint32_t pathCost;
+        std::vector<std::string> paths;
+        RouterPaths(uint32_t, std::vector<std::string>&);
+    };
+
     typedef std::map<char, std::vector<ConnectedRouter*>> Graph;
+    typedef std::map<char, RouterPaths*> PathMap;
 
     Graph build(std::ifstream&);
+
+    PathMap shortestPath(const Graph&, const char);
 }
