@@ -22,6 +22,7 @@ namespace network {
 
     struct RouterPaths {
         uint32_t pathCost;
+        uint32_t pathIter = 0;
         std::vector<std::string> paths;
         RouterPaths(uint32_t, std::vector<std::string>&);
     };
