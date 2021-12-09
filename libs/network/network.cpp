@@ -30,6 +30,12 @@ namespace network {
         return g;
     }
 
+    void destroy(Graph& g) {
+        for (auto& [_, vec]: g)
+            for (auto& obj: vec)
+                delete obj;
+    }
+
     PathMap shortestPath(const Graph& g, const char src) {
         std::unordered_map<char, Node*> nodeMap;
         std::vector<Node*> queue;

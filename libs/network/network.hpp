@@ -31,7 +31,7 @@ namespace network {
     typedef std::map<char, RouterPaths*> PathMap;
 
     Graph build(std::ifstream&);
-
+    void destroy(Graph&);
     PathMap shortestPath(const Graph&, const char);
 }
 
