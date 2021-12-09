@@ -13,9 +13,7 @@ namespace network {
     RouterPaths::RouterPaths(uint32_t cost, std::vector<std::string>& p): pathCost(cost), paths(p) {}
 
     Graph build(std::ifstream& fin) {
-        size_t routerCount;
         Graph g;
-        fin >> routerCount;
         while (!fin.eof()) {
             char node1, node2;
             uint32_t cost;
