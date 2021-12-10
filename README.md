@@ -25,12 +25,12 @@ Alternatively, to build and run the application execute the `build.bat` script.
 
 ## Results
 
-!['network' output](./outputs/network.png "'network' output")
+!['network' output](./outputs/network.PNG "'network' output")
 
-!['paths src' output](./outputs/paths-src.png "'paths src' output")
+!['paths src' output](./outputs/paths-src.PNG "'paths src' output")
 
 *\* denotes the next path to be taken for transmission*
 
-!['paths src dst' output](./outputs/paths-src-dst.png "'paths src dst' output")
+!['paths src dst' output](./outputs/paths-src-dst.PNG "'paths src dst' output")
 
-!['send' output](./outputs/send.png "'send' output")
+!['send' output](./outputs/send.PNG "'send' output")
